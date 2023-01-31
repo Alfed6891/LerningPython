@@ -3,11 +3,11 @@
 # 100 -> 1 (1 + 0 + 0)
 
 
-firstThreeNumber = int (input('Ведиете трехзначное число: '))
-oneNumber = firstThreeNumber // 100
-twoNumber = (firstThreeNumber //10) % 10
-threeNumber = firstThreeNumber % 10
-resultSum =  print ('Сумма цифр этого числа: ', oneNumber + twoNumber + threeNumber)
+first_three_number = int (input('Ведиете трехзначное число: '))
+one_number = first_three_number // 100
+two_number = (first_three_number //10) % 10
+three_number = first_three_number % 10
+print ('Сумма цифр этого числа: ', one_number + two_number + three_number)
 
 
 
@@ -41,19 +41,19 @@ print(f'Петя сделал {petya} к. катя сделала {katya} к. С
 # 123456 -> no
 
 ticket = int (input('Ведиете номер вашего билета: '))
-firstThreeNumber = ticket // 1000
-lastThreeNumber = ticket % 1000
-oneNumber = firstThreeNumber // 100
-twoNumber = (firstThreeNumber //10) % 10
-threeNumber = firstThreeNumber % 10
-fourNumber = lastThreeNumber // 100
-fiveNumber = (lastThreeNumber // 10) % 10
-sixNumber = lastThreeNumber % 10
+first_three_number = ticket // 1000
+last_three_number = ticket % 1000
+one_number = first_three_number // 100
+two_number = (first_three_number //10) % 10
+three_number = first_three_number % 10
+four_number = last_three_number // 100
+five_number = (last_three_number // 10) % 10
+six_number = last_three_number % 10
 
-resultSumFirstNumber = oneNumber + twoNumber + threeNumber
-resultSumLastNumber = fourNumber + fiveNumber + sixNumber
+result_sum_first_number = one_number + two_number + three_number
+result_sum_last_number = four_number + five_number + six_number
 
-if resultSumFirstNumber == resultSumLastNumber:
+if result_sum_first_number == result_sum_last_number:
     print ("Этот билет счастливый")
 else:
     print ("Этот билет несчастливый")
